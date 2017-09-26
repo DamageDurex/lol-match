@@ -22,6 +22,8 @@ from selenium import webdriver
 
 from selenium.common.exceptions import UnexpectedAlertPresentException, WebDriverException
 
+reload(sys)
+
 sys.path.append('..')
 
 from libs.configs import USER_AGENTS
