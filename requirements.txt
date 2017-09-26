@@ -1,0 +1,5 @@
+
+MySQL-python==1.2.5
+scrapy==1.4.0
+selenium==3.4.3
+twisted==17.5.0
