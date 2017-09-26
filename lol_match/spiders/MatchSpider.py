@@ -168,7 +168,7 @@ class MatchSpider(scrapy.Spider):
         # b match list
         if matches_dict.has_key('msg') and len(matches_dict['msg']['result']) > 0:
             for x in matches_dict['msg']['result']:
-                if int(x['MatchStatus']) == 1:
+                if int(x['MatchStatus']) != 3:
                     continue
                 else:
                     item['b_match_id'] = x['bMatchId']
